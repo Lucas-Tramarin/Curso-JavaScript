@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Certificado</title>
+		<meta charset="utf-8">
+		<script>
+			var cargaHoraria = prompt("Digite a carga horária do seu curso: ");
+			var qtdFaltas = prompt("Digite sua quantidade de faltas: ");
+			var notaFinal = prompt("Digite sua nota final do curso: ");
+			var limiteFaltas = cargaHoraria * 0.25;
+			if(notaFinal >= 50 && qtdFaltas <= limiteFaltas){
+				alert("Aluno foi certificado");
+			}
+			else{
+				alert("Aluno não foi certificado");
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Certificado</h1>
+		<h3>Praticando 6</h3>
+	</body>
+</html>

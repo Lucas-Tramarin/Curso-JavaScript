@@ -1,0 +1,35 @@
+a:link{
+	color:red;
+}
+a:visited{
+	color: green;
+}
+a:hover{
+	color: hotpink;
+}
+a:active{
+	color:blue;
+}
+a.aumenta_letra:hover{
+	color: ##ff0000;
+	font-size: 22px;
+}
+.mostrar_frase{
+	display: none;
+	background-color: yellow;
+	padding: 20px;
+}
+div:hover p.mostrar_frase{
+	display: block;
+}
+fieldset{
+	margin: 20px;
+	padding: 50px;
+}
+body{
+	margin: 20px;
+}
+p:first-letter{
+	color: #ff0000;
+	font-size: 200%;
+}

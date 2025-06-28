@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>DOM</title>
+		<meta charset="utf-8">
+		<script>
+			function criarTagSection(){
+				var nome = document.getElementById("nome").value;
+				if(nome == ""){
+					return alert("Por favor digite um nome!!");
+				}
+				var nova_tag = document.createElement("section");
+				document.body.appendChild(nova_tag);
+				nova_tag.innerHTML = "Olá, <h3>" + nome + "</h3>";
+			};
+			function temaEscuro(){
+				if (document.body.style.background == "white"){
+					document.body.style.color = "white";
+					document.body.style.background = "black";
+				}else{
+					document.body.style.color = "black";
+					document.body.style.background = "white";
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<h1>DOM - Prática</h1>
+		<h3>Praticando 2 - alterando conteúdo da div e cor do body</h3>
+		<form>
+			<label for="nome">DOM Prática:</label></br>
+	 		<input type="text" id="nome" placeholder="Digite seu nome"/></br></br>
+			<input type="button" value="ENVIAR" onclick="criarTagSection()"/></br></br></br>
+			<input type="button" value="TEMA ESCURO/CLARO" onclick="temaEscuro()"/>
+		</form></br>
+	</body>
+</html>

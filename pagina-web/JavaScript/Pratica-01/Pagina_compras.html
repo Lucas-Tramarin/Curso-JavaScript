@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Página de Compras</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="Estilo.css">
+		<script src="Script.js"></script>
+	</head>
+	<body>
+		<h1>Página de compras</h1>
+		<form>
+			<label for="produto_nome">Produto</label>
+			<input type="text" id="produto_nome" />
+			<label for="produto_valor">Valor</label>
+			<input type="text" id="produto_valor" />
+			<label for="produto_quantidade">Quantidade</label>
+			<input type="text" id="produto_quantidade" />
+			<input type="button" id="btn_enviar" onclick="adicionarProduto()" value="Adicionar Produto"/>
+			</p>
+			<table class="carrinho_compras">
+				<caption>Tabela de Produtos</caption>
+				<thead>
+					<tr>
+						<th>Produto</th>
+						<th>Valor</th>
+						<th>Quantidade</th>
+						<th>Valor Venda</th>
+						</tr>
+				</thead>
+				<tbody id="tabela_produtos">         
+				</tbody>
+				<tfoot>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<th id="valor_total"><span>Total: R$ </span>0,00</th>
+					</tr>
+				</tfoot>
+			</table>
+			<input type="button" id="btn_salvar"  value="Salvar Produto"/>
+		</form> 
+	</body>
+</html>
